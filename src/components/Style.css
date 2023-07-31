@@ -1,0 +1,30 @@
+.container {
+    max-width: 1200px; /* Change this value to increase/decrease the width */
+  }
+
+  .faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    margin-top: 100px;
+    background-color: rgb(219, 218, 231);
+    height: 600px; /* Adjust the height as per your requirement */
+    width: 90%; /* Set the width to a specific value or percentage */
+    max-width: 7000px; /* Optional: Set a maximum width to control responsiveness */
+    border-radius: 20px; /* Set the border radius to create curved corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .pp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d193d;
+    height: 100vh; /* Set the height of the pp div to fill the viewport */
+  }
+
+  .laq{
+    font-weight: bold;
+  }
