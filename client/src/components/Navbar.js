@@ -50,7 +50,7 @@ function Navbar() {
                 <li className="nav-item"><Link to="/courses.html" className="nav-link"><i className="fas fa-user"></i> Profile</Link></li>
               </ul>
             </ul>
-            <Link className="btn btn-primary shadow" role="button" to="signup.html">Login/Sign up</Link>
+            <Link className="btn btn-primary shadow" role="button" to="/SignUp">Login/Sign up</Link>
           </div>
         </div>
       </nav>
