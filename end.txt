@@ -1,3 +1,0 @@
-CSS styling- all pages
-redux 
-backend- firebase
