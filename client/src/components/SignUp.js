@@ -3,6 +3,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Navbar from './Navbar';
 import Footer from './Footer';
 import Course from './Course';
+import a from './images/a.png';
+import register from './assets/img/illustrations/register.svg'
 import './Style.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
@@ -12,14 +14,14 @@ const SignUp = () => {
   return (
     <div>
       <nav className="navbar navbar-expand-md fixed-top navbar-shrink py-3 navbar-light" id="mainNav">
-        <img style={{ height: '40px', width: '150px' }} src="client\src\components\assets\a.jpg" href="/courses.html" alt="Shiksha Logo" />
+        <img style={{ height: '40px', width: '150px' }} src={a} href="/courses.html" alt="Shiksha Logo" />
         {/* Rest of the navigation code */}
       </nav>
 
       <section className="py-4 py-md-5 my-5">
         <div className="container py-md-5">
           <div className="row">
-            <div className="col-md-6 text-center"><img className="img-fluid w-100" src="assets/img/illustrations/register.svg" alt="Register" /></div>
+            <div className="col-md-6 text-center"><img className="img-fluid w-100" src={register} alt="Register" /></div>
             <div className="col-md-5 col-xl-4 text-center text-md-start">
               <h2 className="display-6 fw-bold mb-5"><span className="underline pb-1"><strong>Sign up</strong></span></h2>
               <form method="post" data-bs-theme="light">
