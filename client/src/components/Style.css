@@ -27,4 +27,59 @@
 
   .laq{
     font-weight: bold;
+<<<<<<< HEAD
   }
+=======
+
+  }
+
+
+.body2{background: #1d193d; height: 745px;}.form-control:focus{box-shadow: none;border-color: #1d193d}.profile-button{background:#1d193d;box-shadow: none;border: none}.profile-button:hover{background: #1d193d}.profile-button:focus{background: #1d193d;box-shadow: none}.profile-button:active{background: #1d193d;box-shadow: none}.back:hover{color: #1d193d;cursor: pointer}.labels{font-size: 11px}.add-experience:hover{background: #1d193d;color: #fff;cursor: pointer;border: solid 1px #1d193d}
+.abcd{
+    display: flex;
+}
+.khuban{
+    margin-left: 1vw;
+}
+
+
+.redux .textarea{
+  border: 2px solid #676666;
+  border-radius: 40px;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  color:'black';
+  color: #3d3d3d;
+  height:'150px'
+}
+
+.contact{
+    background-image: url('./images/c.png');
+     height: 775px;
+     background-size: 1550px 900px;
+     background-repeat: no-repeat;
+     padding: 50px 0px 20px 0px;
+     margin-top: 2px;
+}
+
+.redux .label {
+  color: #3d3d3d;
+  display: block;
+  font-family: sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.cont2{
+  margin-top:120px;
+  margin-left:550px;
+  background-color: #000000;
+  opacity: 0.5;
+  width: 500px;
+  height:430px;
+  border:2px solid black;
+}
+
+>>>>>>> 7870e506 (Initial commit)

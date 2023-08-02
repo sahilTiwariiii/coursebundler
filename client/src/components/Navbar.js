@@ -43,6 +43,12 @@ function Navbar() {
                 </ul>
               </li>
               <li className="nav-item"><Link to="contacts.html" className="nav-link">Contacts</Link></li>
+<<<<<<< HEAD
+=======
+
+              <li className="nav-item"><Link to="/Contact" className="nav-link">Contacts</Link></li>
+
+>>>>>>> 7870e506 (Initial commit)
               <li className="nav-item"><Link to="/faq" className="nav-link">FAQ</Link></li>
               <ul className="navbar-nav mx-auto">
                 <li className="nav-item"><Link to="/courses.html" className="nav-link"><i className="far fa-heart"></i> Favourites</Link></li>
