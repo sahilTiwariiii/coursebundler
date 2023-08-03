@@ -4,6 +4,7 @@ import Index from './components/Index';
 import FAQ from './components/FAQ';
 import {  Provider } from 'react-redux';
 import store from './components/store';
+import SignUp from "./components/SignUp";
 function Apps() {
   return (
   
@@ -13,6 +14,7 @@ function Apps() {
 
   <Route path='/' element={<Index/>} exact/>
   <Route path='/faq' element={<FAQ/>} exact/>
+  <Route path='/signup' element={<SignUp/>} exact/>
 
 </Routes>
 </Router>
