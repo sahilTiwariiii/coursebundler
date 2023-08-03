@@ -1,20 +1,36 @@
 const User=require('../models/User')
+const bcrypt=require("bcryptjs")
 exports.postSignup=(req,res,next)=>{
-    console.log("hello")
-    console.log(req.body)
-    // console.log(req.body.username)
+    // console.log("hello")
+    // console.log(req.body)
+    
     const username=req.body.username;
     const password=req.body.password;
     const email=req.body.email;
-    User.create({
-        username:username,
-        password:password,
-        email:email
+    User.findOne({email:email}).then(user=>{
+        if(user){
+            res.status(400).send({message:"User already exists"})
+        }
+        else{
+            bcrypt.hash(password,12)
+            .then(hashedpassword=>{
+                console.log(hashedpassword)
+                User.create({
+                    username:username,
+                    password:hashedpassword,
+                    email:email
+                })
+                .then(result=>{
+                    res.status(200).send({message:"user added succesfully"});
+                })
+                .catch(err=>{
+                    res.status(500).send({message:"there is some error at server side"})
+                })
+            })
+            .catch(err=>{
+                console.log(err)
+            })
+        }
     })
-    .then(result=>{
-        res.status(200).send({message:"user added succesfully"});
-    })
-    .catch(err=>{
-        res.status(500).send({message:"there is some error at server side"})
-    })
+    
 }
