@@ -1,11 +1,5 @@
 import React from 'react' 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
-<<<<<<< HEAD
-import Navbar from './Navbar';
-import Footer from './Footer';
-import Course from './Course';
-=======
->>>>>>> 7870e506 (Initial commit)
 import a from './images/a.png';
 import register from './assets/img/illustrations/register.svg'
 import './Style.css'

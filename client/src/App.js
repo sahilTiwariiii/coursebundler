@@ -5,13 +5,10 @@ import FAQ from './components/FAQ';
 import {  Provider } from 'react-redux';
 import store from './components/store';
 import SignUp from "./components/SignUp";
-<<<<<<< HEAD
-=======
-
+import C1 from "./components/C1";
 import Profile from "./components/Profile";
 import Contact from './components/Contact';
 
->>>>>>> 7870e506 (Initial commit)
 function Apps() {
   return (
   
@@ -23,12 +20,11 @@ function Apps() {
   <Route path='/faq' element={<FAQ/>} exact/>
   <Route path='/signup' element={<SignUp/>} exact/>
 
-<<<<<<< HEAD
-=======
   <Route path='/Profile' element={<Profile/>} exact/>
   <Route path='/Contact' element={<Contact/>} exact/>
+  <Route path='/C1' element={<C1/>} exact/>
 
->>>>>>> 7870e506 (Initial commit)
+
 </Routes>
 </Router>
 </Provider>

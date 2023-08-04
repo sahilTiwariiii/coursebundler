@@ -27,9 +27,6 @@
 
   .laq{
     font-weight: bold;
-<<<<<<< HEAD
-  }
-=======
 
   }
 
@@ -82,4 +79,62 @@
   border:2px solid black;
 }
 
->>>>>>> 7870e506 (Initial commit)
+
+/* .course {
+  border: 8px solid #ccc;
+  padding: 10px;
+  margin: 10px 10px;
+  width: 500px;
+}
+
+.course h3 {
+  margin-top: 0;
+}
+
+.course p {
+  margin-bottom: 10px;
+}
+
+
+
+
+.c1{
+  background-color: #eee8e8;
+ height: 800px;
+ margin-top: 80px;
+} 
+
+.c1h{
+  text-align: center;
+  margin-top: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} */
+
+.c1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #eee8e8;
+  height: 800px;
+  margin-top: 80px;
+}
+
+
+
+/* Two-course columns */
+.course {
+  border: 8px solid #ccc;
+  padding: 10px;
+  margin: 10px 2.5%; /* Adjust margin for even spacing between columns */
+  width: 20%; /* Set the width of each course container */
+  height: 40%;
+}
+
+.course h3 {
+  margin-top: 0;
+}
+
+.course p {
+  margin-bottom: 10px;
+}
+
