@@ -30,7 +30,7 @@ const SignUp = () => {
                 <div className="mb-3"><input className="shadow-sm form-control" type="password" name="password_repeat" placeholder="Repeat Password" /></div>
                 <div className="mb-5"><button className="btn btn-primary shadow" type="submit">Create account</button></div>
               </form>
-              <p className="text-muted">Have an account? <a href="login.html">Log in&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icon-tabler-arrow-narrow-right">
+              <p className="text-muted">Have an account? <a href="SignIn">Log in&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icon-tabler-arrow-narrow-right">
                 {/* SVG path */}
               </svg></a>&nbsp;</p>
             </div>
