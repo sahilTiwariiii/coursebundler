@@ -44,3 +44,115 @@
   margin-bottom: 1rem;
   border-radius: 1rem;
 }
+  .laq{
+    font-weight: bold;
+
+  }
+
+
+.body2{background: #1d193d; height: 745px;}.form-control:focus{box-shadow: none;border-color: #1d193d}.profile-button{background:#1d193d;box-shadow: none;border: none}.profile-button:hover{background: #1d193d}.profile-button:focus{background: #1d193d;box-shadow: none}.profile-button:active{background: #1d193d;box-shadow: none}.back:hover{color: #1d193d;cursor: pointer}.labels{font-size: 11px}.add-experience:hover{background: #1d193d;color: #fff;cursor: pointer;border: solid 1px #1d193d}
+.abcd{
+    display: flex;
+}
+.khuban{
+    margin-left: 1vw;
+}
+
+
+.redux .textarea{
+  border: 2px solid #676666;
+  border-radius: 40px;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  color:'black';
+  color: #3d3d3d;
+  height:'150px'
+}
+
+.contact{
+    background-image: url('./images/c.png');
+     height: 775px;
+     background-size: 1550px 900px;
+     background-repeat: no-repeat;
+     padding: 50px 0px 20px 0px;
+     margin-top: 2px;
+}
+
+.redux .label {
+  color: #3d3d3d;
+  display: block;
+  font-family: sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.cont2{
+  margin-top:120px;
+  margin-left:550px;
+  background-color: #000000;
+  opacity: 0.5;
+  width: 500px;
+  height:430px;
+  border:2px solid black;
+}
+
+
+/* .course {
+  border: 8px solid #ccc;
+  padding: 10px;
+  margin: 10px 10px;
+  width: 500px;
+}
+
+.course h3 {
+  margin-top: 0;
+}
+
+.course p {
+  margin-bottom: 10px;
+}
+
+
+
+
+.c1{
+  background-color: #eee8e8;
+ height: 800px;
+ margin-top: 80px;
+} 
+
+.c1h{
+  text-align: center;
+  margin-top: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} */
+
+.c1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #eee8e8;
+  height: 800px;
+  margin-top: 80px;
+}
+
+
+
+/* Two-course columns */
+.course {
+  border: 8px solid #ccc;
+  padding: 10px;
+  margin: 10px 2.5%; /* Adjust margin for even spacing between columns */
+  width: 20%; /* Set the width of each course container */
+  height: 40%;
+}
+
+.course h3 {
+  margin-top: 0;
+}
+
+.course p {
+  margin-bottom: 10px;
+}

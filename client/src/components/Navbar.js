@@ -36,18 +36,18 @@ function Navbar() {
                   Courses
                 </Link>
                 <ul className="dropdown-menu" aria-labelledby="coursesDropdown">
-                  <li><Link to="course1.html" className="dropdown-item">Academic Course</Link></li>
+                  <li><Link to="/C1" className="dropdown-item">Academic Course</Link></li>
                   <li><Link to="course2.html" className="dropdown-item">Professional Course</Link></li>
                   <li><Link to="course3.html" className="dropdown-item">Technology and IT</Link></li>
                   <li><Link to="course4.html" className="dropdown-item">Creative Arts</Link></li>
                 </ul>
               </li>
-              <li className="nav-item"><Link to="contacts.html" className="nav-link">Contacts</Link></li>
+              <li className="nav-item"><Link to="/Contact" className="nav-link">Contacts</Link></li>
               <li className="nav-item"><Link to="/faq" className="nav-link">FAQ</Link></li>
               <ul className="navbar-nav mx-auto">
-                <li className="nav-item"><Link to="/courses.html" className="nav-link"><i className="far fa-heart"></i> Favourites</Link></li>
-                <li className="nav-item"><Link to="/courses.html" className="nav-link"><i className="fas fa-shopping-cart"></i> Cart</Link></li>
-                <li className="nav-item"><Link to="/courses.html" className="nav-link"><i className="fas fa-user"></i> Profile</Link></li>
+                <li className="nav-item"><Link to="/" className="nav-link"><i className="far fa-heart"></i> Favourites</Link></li>
+                <li className="nav-item"><Link to="/" className="nav-link"><i className="fas fa-shopping-cart"></i> Cart</Link></li>
+                <li className="nav-item"><Link to="/Profile" className="nav-link"><i className="fas fa-user"></i> Profile</Link></li>
               </ul>
             </ul>
             <Link className="btn btn-primary shadow" role="button" to="/SignUp">Login/Sign up</Link>
