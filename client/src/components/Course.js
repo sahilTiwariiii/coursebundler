@@ -52,7 +52,7 @@ function Course() {
                 <br />
                 <h1 className="card-title">Academic Courses</h1>
                 <div className="card-body">
-                  <a className="btn btn-sm btn-primary" href="/RegisterAsDonor">
+                  <a className="btn btn-sm btn-primary" href="/C1">
                     View
                   </a>
                 </div>
@@ -71,7 +71,7 @@ function Course() {
                 <br />
                 <h1 className="card-title">Professional Courses</h1>
                 <div className="card-body">
-                  <a className="btn btn-sm btn-primary" href="/RegisterAsHospital">
+                  <a className="btn btn-sm btn-primary" href="/C2">
                     View
                   </a>
                 </div>

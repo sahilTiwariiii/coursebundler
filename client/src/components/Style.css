@@ -79,62 +79,79 @@
   border:2px solid black;
 }
 
-
-/* .course {
-  border: 8px solid #ccc;
-  padding: 10px;
-  margin: 10px 10px;
-  width: 500px;
-}
-
-.course h3 {
-  margin-top: 0;
-}
-
-.course p {
-  margin-bottom: 10px;
-}
-
-
-
-
-.c1{
-  background-color: #eee8e8;
- height: 800px;
- margin-top: 80px;
-} 
-
-.c1h{
-  text-align: center;
-  margin-top: 20px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-} */
+/*course page */
 
 .c1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #eee8e8;
+  background-color: #ffffff;
   height: 800px;
-  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
-
-
-/* Two-course columns */
 .course {
-  border: 8px solid #ccc;
+  border: 1px solid #000000;
   padding: 10px;
   margin: 10px 2.5%; /* Adjust margin for even spacing between columns */
   width: 20%; /* Set the width of each course container */
-  height: 40%;
+  height: 53%;
+  margin-top: -200px;
+  background-color: #e0e0e6;
+  /* text-align: center; */
+}
+.cp{
+  color: rgb(216, 24, 24);
+}
+.ci{
+  width: 240px;
+  height: 150px;
+  border: 4px solid #000; /* Adjust the border width and color as needed */
+  padding: 0px; /* Optional padding to create space between the image and the border */
+  margin-left: 20px;
+}
+.course.button{
+  background-color: #000000;
+  color: #000000;
 }
 
-.course h3 {
-  margin-top: 0;
+
+.ch5{
+  font-weight: bolder;
+  margin-top: 10px;
 }
 
-.course p {
-  margin-bottom: 10px;
+.c1h{
+  font-style: italic;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-left: 200px;
+  margin-top: 110px;
+  margin-right: 200px;
+  width: 2000px;
+  color: rgb(94, 82, 78);
+    font-size: 2.5rem;
+    color: #333; /* Change the color to your preference */
+    text-align: center;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
 }
 
+.ratings {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.rating {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.stars {
+  font-size: 1.5rem;
+  color: #ff9800; /* Change the color to match your design */
+}

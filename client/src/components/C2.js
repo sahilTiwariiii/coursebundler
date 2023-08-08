@@ -1,9 +1,10 @@
+
 import React from 'react';
-import './Style.css'; // Import the CSS file
+import './Style.css'; 
 import Navbar from './Navbar';
 import Footer from './Footer';
 
-const C1 = () => {
+const C2 = () => {
   return (
     <div>
       <Navbar></Navbar>
@@ -142,4 +143,4 @@ const C1 = () => {
   );
 };
 
-export default C1;
+export default C2;
