@@ -7,6 +7,8 @@ import store from './components/store';
 import SignUp from "./components/SignUp";
 import SignIn from "./components/SignIn";
 import C1 from "./components/C1";
+import C2 from "./components/C2";
+
 import Profile from "./components/Profile";
 import Contact from './components/Contact';
 
@@ -25,6 +27,8 @@ function Apps() {
   <Route path='/Profile' element={<Profile/>} exact/>
   <Route path='/Contact' element={<Contact/>} exact/>
   <Route path='/C1' element={<C1/>} exact/>
+  <Route path='/C2' element={<C2/>} exact/>
+
 
 
 </Routes>
