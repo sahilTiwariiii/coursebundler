@@ -39,7 +39,7 @@ function Course() {
       <div className="xyz">
         <div className="container" style={{ paddingTop: '0cm' }}>
           <div className="row justify-content-center">
-            <div className="col-md-3">
+            <div className="col-md-4">
               <div className="card">
                 <div className="inner">
                   <img
@@ -52,18 +52,18 @@ function Course() {
                 <br />
                 <h1 className="card-title">Academic Courses</h1>
                 <div className="card-body">
-                  <a className="btn btn-sm btn-primary" href="/RegisterAsDonor">
+                  <a className="btn btn-sm btn-primary" href="/C1">
                     View
                   </a>
                 </div>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-4">
               <div className="card">
                 <div className="inner">
                   <img
                     src="https://indiaeducation.net/wp-content/uploads/2023/04/Professional.jpg"
-                    width="280px"
+                    width="380px"
                     height="170px"
                     alt="hospitals"
                   />
@@ -71,32 +71,14 @@ function Course() {
                 <br />
                 <h1 className="card-title">Professional Courses</h1>
                 <div className="card-body">
-                  <a className="btn btn-sm btn-primary" href="/RegisterAsHospital">
+                  <a className="btn btn-sm btn-primary" href="/C2">
                     View
                   </a>
                 </div>
               </div>
             </div>
-            <div className="col-md-3">
-              <div className="card">
-                <div className="inner">
-                  <img
-                    src="https://www.techquintal.com/wp-content/uploads/2021/05/Information-Technology.jpg"
-                    className="card-img-top"
-                    height="170px"
-                    alt="patient"
-                  />
-                </div>
-                <br />
-                <h1 className="card-title">Technology & IT</h1>
-                <div className="card-body">
-                  <a className="btn btn-sm btn-primary" href="/RegisterAsPatient">
-                    View
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-3">
+            
+            <div className="col-md-4">
               <div className="card">
                 <div className="inner">
                   <img

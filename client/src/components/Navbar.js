@@ -37,9 +37,8 @@ function Navbar() {
                 </Link>
                 <ul className="dropdown-menu" aria-labelledby="coursesDropdown">
                   <li><Link to="/C1" className="dropdown-item">Academic Course</Link></li>
-                  <li><Link to="course2.html" className="dropdown-item">Professional Course</Link></li>
-                  <li><Link to="course3.html" className="dropdown-item">Technology and IT</Link></li>
-                  <li><Link to="course4.html" className="dropdown-item">Creative Arts</Link></li>
+                  <li><Link to="/C2" className="dropdown-item">Professional Course</Link></li>
+                  <li><Link to="/C3" className="dropdown-item">Creative Arts</Link></li>
                 </ul>
               </li>
               <li className="nav-item"><Link to="/Contact" className="nav-link">Contacts</Link></li>

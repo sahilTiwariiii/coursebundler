@@ -22,12 +22,12 @@ const SignUp = () => {
             <div className="col-md-5 col-xl-4 text-center text-md-start">
               <h2 className="display-6 fw-bold mb-5"><span className="underline pb-1"><strong>Sign up</strong></span></h2>
               <form method="post" data-bs-theme="light">
-              <div className="mb-3"><input className="shadow-sm form-control" type="text" name="username" placeholder="Username" /></div>
-                <div className="mb-3"><input className="shadow-sm form-control" type="email" name="email" placeholder="Email" /></div>
-                <div className="mb-3"><input className="shadow-sm form-control" type="password" name="password_repeat" placeholder="Password" /></div>
+              <div className="mb-3"><input className="shadow-sm form-control" type="text" name="username" id="Username"placeholder="Username" /></div>
+                <div className="mb-3"><input className="shadow-sm form-control" type="email" name="email" id="Email" placeholder="Email" /></div>
+                <div className="mb-3"><input className="shadow-sm form-control" type="password" name="password_repeat" id="Password"placeholder="Password" /></div>
                 <div className="mb-5"><button className="btn btn-primary shadow" type="submit">Create account</button></div>
               </form>
-              <p className="text-muted">Have an account? <a href="login.html">Log in&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icon-tabler-arrow-narrow-right">
+              <p className="text-muted">Have an account? <a href="SignIn">Log in&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icon-tabler-arrow-narrow-right">
                 {/* SVG path */}
               </svg></a>&nbsp;</p>
             </div>
