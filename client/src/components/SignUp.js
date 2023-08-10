@@ -96,11 +96,13 @@ const SignUp = () => {
                     placeholder="Password"
                   />
                 </div>
+
                 <div className="mb-5">
                   <button className="btn btn-primary shadow" type="submit">
                     Create account
                   </button>
                 </div>
+                </form>
               <h2 className="display-6 fw-bold mb-5"><span className="underline pb-1"><strong>Sign up</strong></span></h2>
         
               <p className="text-muted">
