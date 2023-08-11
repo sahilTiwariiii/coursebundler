@@ -25,7 +25,7 @@ const SignIn = () => {
                   <div className="mb-3"><input className="shadow-sm form-control" type="password" name="password" placeholder="Password" /></div>
                   <div className="mb-5"><button className="btn btn-primary shadow" type="submit">Log in</button></div>
                 </form>
-                <p className="text-muted"><a href="login.html">Forgot your password?<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icon-tabler-arrow-narrow-right">
+                <p className="text-muted"><a href="ForgetPassword">Forgot your password?<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icon-tabler-arrow-narrow-right">
                   {/* SVG path */}
                 </svg></a>&nbsp;</p>
 
