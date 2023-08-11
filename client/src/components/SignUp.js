@@ -61,6 +61,7 @@ const SignUp = () => {
               <img className="img-fluid w-100" src={register} alt="Register" />
             </div>
             <div className="col-md-5 col-xl-4 text-center text-md-start">
+
               <h2 className="display-6 fw-bold mb-5">
                 <span className="underline pb-1">
                   <strong>Sign up</strong>
@@ -97,12 +98,15 @@ const SignUp = () => {
                     placeholder="Password"
                   />
                 </div>
+
                 <div className="mb-5">
                   <button className="btn btn-primary shadow" type="submit">
                     Create account
                   </button>
                 </div>
-              </form>
+                </form>
+              <h2 className="display-6 fw-bold mb-5"><span className="underline pb-1"><strong>Sign up</strong></span></h2>
+        
               <p className="text-muted">
                 Have an account?{" "}
                 <a href="SignIn">

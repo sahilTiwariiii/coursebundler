@@ -7,7 +7,6 @@ import a from './images/a.png';
 import register from './assets/img/illustrations/register.svg'
 import './Style.css'
 
-<Navbar></Navbar>
 const Carrier = () => {
     return (
         <section id="carrier-page" style={{ background: '#F6F6F6' }}>

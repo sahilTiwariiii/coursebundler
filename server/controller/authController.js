@@ -23,9 +23,7 @@ const transporter = nodemailer.createTransport({
     }
   );
 exports.postSignup=(req,res,next)=>{
-    // console.log("hello")
-    // console.log(req.body)
-    
+   
     const username=req.body.username;
     const password=req.body.password;
     const email=req.body.email;
@@ -56,6 +54,7 @@ exports.postSignup=(req,res,next)=>{
     })
     
 }
+
 exports.postLogin=(req,res,next)=>{
     const email=req.body.email
     const password=req.body.password
