@@ -9,6 +9,8 @@ import SignIn from "./components/SignIn";
 import ForgetPassword from "./components/ForgetPassword";
 import ResetPassword from "./components/ResetPassword";
 import C1 from "./components/C1";
+import C2 from "./components/C2";
+import C3 from "./components/C3";
 import Profile from "./components/Profile";
 import Contact from './components/Contact';
 
@@ -29,6 +31,8 @@ function Apps() {
   <Route path='/Profile' element={<Profile/>} exact/>
   <Route path='/Contact' element={<Contact/>} exact/>
   <Route path='/C1' element={<C1/>} exact/>
+  <Route path='/C2' element={<C2/>} exact/>
+  <Route path='/C3' element={<C3/>} exact/>
 
 
 </Routes>

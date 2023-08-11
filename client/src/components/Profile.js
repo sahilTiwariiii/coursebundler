@@ -34,7 +34,7 @@ const Profile = () => {
                     <button className="btn btn-primary profile-button khuban" type="button">Edit Profile</button>
                   </div>
                   <div className="mt-3 text-center">
-                    <button className="btn btn-primary profile-button khuban" type="button">History/Favorites</button>
+                    <button className="btn btn-primary profile-button khuban" type="button">Save</button>
                   </div>
                 </div>
               </div>
