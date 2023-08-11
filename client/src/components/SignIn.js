@@ -2,12 +2,38 @@ import React from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import Navbar from './Navbar';
 import Footer from './Footer';
+import Course from './Course';
+import a from './images/a.png';
 import register from './assets/img/illustrations/register.svg'
 import './Style.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const SignIn = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const Navigate=useNavigate()
+
+  const emailChange = (e) => {
+    // console.log(e.target.value)
+    setEmail(e.target.value);
+  };
+  const passwordChange = (e) => {
+    // console.log(e.target.value)
+    setPassword(e.target.value);
+  };
+  const Submitting=async(e)=>{
+    e.preventDefault();
+    const response=await axios.post("http://localhost:8080/bn/auth/login",{email:email,password:password})
+    console.log(response)
+    if(response.status==200){
+      localStorage.setItem("token",response.data.token)
+      Navigate('/')
+    }
+
+  }
+  
+
     return (
       <div>
         <Navbar></Navbar>
@@ -19,8 +45,8 @@ const SignIn = () => {
               <div className="col-md-5 col-xl-4 text-center text-md-start">
                 <h2 className="display-6 fw-bold mb-5"><span className="underline pb-1"><strong>Login</strong></span></h2>
                 <form method="post" data-bs-theme="light">
-                  <div className="mb-3"><input className="shadow-sm form-control" type="email" name="email" id="Email" placeholder="Email" /></div>
-                  <div className="mb-3"><input className="shadow-sm form-control" type="password" name="password" id="Password" placeholder="Password" /></div>
+                  <div className="mb-3"><input className="shadow-sm form-control" type="email" name="email" placeholder="Email" /></div>
+                  <div className="mb-3"><input className="shadow-sm form-control" type="password" name="password" placeholder="Password" /></div>
                   <div className="mb-5"><button className="btn btn-primary shadow" type="submit">Log in</button></div>
                 </form>
                 <p className="text-muted"><a href="ForgetPassword">Forgot your password?<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icon-tabler-arrow-narrow-right">

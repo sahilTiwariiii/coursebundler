@@ -68,7 +68,7 @@ exports.postLogin=(req,res,next)=>{
             .then(Match=>{
                 if(Match){
                     
-                    const token = jwt.sign({email:user.email }, secretKey,{ expiresIn: '24h' });
+                    const token = jwt.sign({email:user.email,username:user.username }, secretKey,{ expiresIn: '24h' });
 
                     res.status(200).send({message:'login succesfully',token:token})
 
@@ -117,3 +117,4 @@ exports.postReset = (req, res, next) => {
         });
     });
   }
+  

@@ -3,7 +3,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import a from "./images/a.png";
 import register from "./assets/img/illustrations/register.svg";
 import axios from "axios";
-import { Navigate } from "react-router-dom";
+import {useNavigate} from "react-router-dom"
+
 import "./Style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
@@ -12,6 +13,7 @@ const SignUp = () => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const Navigate=useNavigate()
 
   const usernameChange = (e) => {
     // console.log(e.target.value)
@@ -34,7 +36,7 @@ const SignUp = () => {
       password: password,
     });
     console.log(resp.data);
-    Navigate('/signin')
+    Navigate('/signIn')
   };
 
   return (

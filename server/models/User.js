@@ -13,6 +13,8 @@ const userSchema=mongoose.Schema(
             type:String,
             required:true
         },
+        twitterUrl:String,
+        linkedUrl:String,
         resetToken: String,
         resetTokenExpiration: Date
     }
