@@ -6,6 +6,8 @@ import {  Provider } from 'react-redux';
 import store from './components/store';
 import SignUp from "./components/SignUp";
 import SignIn from "./components/SignIn";
+import ForgetPassword from "./components/ForgetPassword";
+import ResetPassword from "./components/ResetPassword";
 import C1 from "./components/C1";
 import C2 from "./components/C2";
 import C3 from "./components/C3";
@@ -23,6 +25,8 @@ function Apps() {
   <Route path='/faq' element={<FAQ/>} exact/>
   <Route path='/signup' element={<SignUp/>} exact/>
   <Route path='/signIn' element={<SignIn/>} exact/>
+  <Route path='/forgetpassword' element={<ForgetPassword/>} exact/>
+  <Route path='/resetpassword' element={<ResetPassword/>} exact/>
 
   <Route path='/Profile' element={<Profile/>} exact/>
   <Route path='/Contact' element={<Contact/>} exact/>
