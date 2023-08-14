@@ -16,8 +16,9 @@ const C1 = () => {
             className='ci'
             alt="hospitals"
           />
-          <h5 className='ch5'><bold> Introduction to Web Development</bold></h5>
+          <h5 className='ch5'><bold> Introduction to Web Development</bold><div style={{color:'red'}}>(2.5 hours)</div></h5>
           <p>A beginner-friendly course to learn the basics of web development.</p>
+          <p className='cp'>easy</p>
           <p className='cp'>$49.99</p>
           <div className='ratings'>
             <span className='rating'>4.8</span>
@@ -31,8 +32,9 @@ const C1 = () => {
             className='ci'
             alt="hospitals"
           />
-          <h5 className='ch5'><bold> Data Structures and Algorithms</bold></h5>
+          <h5 className='ch5'><bold> Data Structures and Algorithms</bold><div style={{color:'red'}}>(5 hours)</div></h5>
           <p>Explores various data structures and algorithms used in efficient coding and problem-solving.</p>
+          <p className='cp'>hard</p>
           <p className='cp'>$59</p>
           <div className='ratings'>
             <span className='rating'>4.0</span>
@@ -46,8 +48,9 @@ const C1 = () => {
             className='ci'
             alt="hospitals"
           />
-          <h5 className='ch5'><bold> Introduction to Computer Science: </bold></h5>
+          <h5 className='ch5'><bold> Introduction to Computer Science: </bold> <div style={{color:'red'}}>(3 hours)</div></h5>
           <p>Provides an overview of fundamental concepts in computer science, including programming, algorithms and problem-solving techniques.</p>
+          <p className='cp'>intermediate</p>
           <p className='cp'>$10</p>
           <div className='ratings'>
             <span className='rating'>3.0</span>
@@ -63,8 +66,9 @@ const C1 = () => {
             className='ci'
             alt="hospitals"
           />
-          <h5 className='ch5'><bold>Machine Learning: </bold></h5>
+          <h5 className='ch5'><bold>Machine Learning: </bold><div style={{color:'red'}}>(8 hours)</div></h5>
           <p>Introduces the concepts of machine learning and artificial intelligence that enable computers to learn from data.</p>
+          <p className='cp'>intermediate</p>
           <p className='cp'>$18</p>
           <div className='ratings'>
             <span className='rating'>3.8</span>
@@ -79,8 +83,9 @@ const C1 = () => {
             className='ci'
             alt="hospitals"
           />
-          <h5 className='ch5'><bold> Artificial Intelligence</bold></h5>
+          <h5 className='ch5'><bold> Artificial Intelligence</bold><div style={{color:'red'}}>(4 hours)</div></h5>
           <p> Focuses on developing systems that can mimic human intelligence</p>
+          <p className='cp'>easy</p>
           <p className='cp'>$38</p>
           <div className='ratings'>
             <span className='rating'>3.9</span>
@@ -94,8 +99,9 @@ const C1 = () => {
             className='ci'
             alt="hospitals"
           />
-          <h5 className='ch5'><bold> Database Management</bold></h5>
+          <h5 className='ch5'><bold> Database Management</bold><div style={{color:'red'}}>(7 hours)</div></h5>
           <p>Covers database design, implementation, and management using relational database management systems (RDBMS) like SQL.</p>
+          <p className='cp'>Hard</p>
           <p className='cp'>$18</p>
           <div className='ratings'>
             <span className='rating'>2.9</span>

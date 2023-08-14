@@ -16,8 +16,9 @@ const C3 = () => {
             className='ci'
             alt="hospitals"
           />
-          <h5 className='ch5'><bold> Fashion Design and Merchandising </bold></h5>
+          <h5 className='ch5'><bold> Fashion Design and Merchandising </bold><div style={{color:'red'}}>(4 hours)</div></h5>
           <p>This course explores fashion design, pattern-making, textiles, and garment construction. </p>
+          <p className='cp'>intermediate</p>
           <p className='cp'>$8.8</p>
           <div className='ratings'>
             <span className='rating'>4.8</span>
@@ -31,8 +32,9 @@ const C3 = () => {
             className='ci'
             alt="hospitals"
           />
-          <h5 className='ch5'><bold> Film Production Program</bold></h5>
+          <h5 className='ch5'><bold> Film Production Program</bold><div style={{color:'red'}}>(3 hours)</div></h5>
           <p>This program immerses students in the world of filmmaking</p>
+          <p className='cp'>hard</p>
           <p className='cp'>$40</p>
           <div className='ratings'>
             <span className='rating'>4.2</span>
@@ -46,8 +48,9 @@ const C3 = () => {
             className='ci'
             alt="hospitals"
           />
-          <h5 className='ch5'><bold> Performing Arts </bold></h5>
+          <h5 className='ch5'><bold> Performing Arts </bold><div style={{color:'red'}}>(2 hours)</div></h5>
           <p>This program encompasses theater, dance, and acting.</p>
+          <p className='cp'>easy</p>
           <p className='cp'>$10</p>
           <div className='ratings'>
             <span className='rating'>3.0</span>

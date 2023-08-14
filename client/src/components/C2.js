@@ -16,8 +16,9 @@ const C2 = () => {
             className='ci'
             alt="hospitals"
           />
-          <h5 className='ch5'><bold> Human Resources Management</bold></h5>
+          <h5 className='ch5'><bold> Human Resources Management</bold><div style={{color:'red'}}>(2.8 hours)</div></h5>
           <p>This program provides an in-depth understanding of HR management, covering areas like recruitment,and HR legal compliance.</p>
+          <p className='cp'>hard</p>
           <p className='cp'>$30.8</p>
           <div className='ratings'>
             <span className='rating'>4.5</span>
@@ -31,8 +32,9 @@ const C2 = () => {
             className='ci'
             alt="hospitals"
           />
-          <h5 className='ch5'><bold> Digital Marketing</bold></h5>
+          <h5 className='ch5'><bold> Digital Marketing</bold><div style={{color:'red'}}>(5 hours)</div></h5>
           <p>This course equips learners with skills in online marketing strategies, including search engine optimization (SEO)</p>
+          <p className='cp'>easy</p>
           <p className='cp'>$18</p>
           <div className='ratings'>
             <span className='rating'>3.2</span>
@@ -46,8 +48,9 @@ const C2 = () => {
             className='ci'
             alt="hospitals"
           />
-          <h5 className='ch5'><bold> Certified Public Accountant </bold></h5>
+          <h5 className='ch5'><bold> Certified Public Accountant </bold><div style={{color:'red'}}>(4 hours)</div></h5>
           <p>Designed for aspiring accountants, this course covers topics necessary for the CPA exam.</p>
+          <p className='cp'>intermediate</p>
           <p className='cp'>$10</p>
           <div className='ratings'>
             <span className='rating'>3.0</span>
@@ -63,8 +66,9 @@ const C2 = () => {
             className='ci'
             alt="hospitals"
           />
-          <h5 className='ch5'><bold>Real Estate Agent Licensing </bold></h5>
+          <h5 className='ch5'><bold>Real Estate Agent Licensing </bold><div style={{color:'red'}}>(2.7 hours)</div></h5>
           <p>For aspiring real estate professionals, this course covers legal aspects, negotiations, and regulations related to real estate transactions. </p>
+          <p className='cp'>easy</p>
           <p className='cp'>$18</p>
           <div className='ratings'>
             <span className='rating'>3.8</span>
@@ -79,8 +83,9 @@ const C2 = () => {
             className='ci'
             alt="hospitals"
           />
-          <h5 className='ch5'><bold> Graphic Design and Multimedia </bold></h5>
+          <h5 className='ch5'><bold> Graphic Design and Multimedia </bold><div style={{color:'red'}}>(9 hours)</div></h5>
           <p> Ideal for creative individuals, this course covers graphic design principles, typography, layout design, image editing, and multimedia creation.</p>
+          <p className='cp'>hard</p>
           <p className='cp'>$38</p>
           <div className='ratings'>
             <span className='rating'>3.9</span>
@@ -94,8 +99,9 @@ const C2 = () => {
             className='ci'
             alt="hospitals"
           />
-          <h5 className='ch5'><bold> Certified Financial Planner </bold></h5>
+          <h5 className='ch5'><bold> Certified Financial Planner </bold><div style={{color:'red'}}>(6 hours)</div></h5>
           <p>This course is designed for individuals interested in financial planning.</p>
+          <p className='cp'>intermediate</p>
           <p className='cp'>$18</p>
           <div className='ratings'>
             <span className='rating'>2.9</span>
