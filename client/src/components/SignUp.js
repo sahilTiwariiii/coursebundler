@@ -5,6 +5,7 @@ import register from "./assets/img/illustrations/register.svg";
 import axios from "axios";
 import {useNavigate} from "react-router-dom"
 
+
 import "./Style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
@@ -105,8 +106,8 @@ const SignUp = () => {
                   </button>
                 </div>
                 </form>
-              <h2 className="display-6 fw-bold mb-5"><span className="underline pb-1"><strong>Sign up</strong></span></h2>
-        
+              {/* <h2 className="display-6 fw-bold mb-5"><span className="underline pb-1"><strong>Sign up</strong></span></h2>
+         */}
               <p className="text-muted">
                 Have an account?{" "}
                 <a href="SignIn">
