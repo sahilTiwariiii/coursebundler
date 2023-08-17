@@ -26,7 +26,7 @@ function Apps() {
   <Route path='/signup' element={<SignUp/>} exact/>
   <Route path='/signIn' element={<SignIn/>} exact/>
   <Route path='/forgetpassword' element={<ForgetPassword/>} exact/>
-  <Route path='/resetpassword' element={<ResetPassword/>} exact/>
+  <Route path='/reset/:token' element={<ResetPassword/>} exact/>
 
   <Route path='/Profile' element={<Profile/>} exact/>
   <Route path='/Contact' element={<Contact/>} exact/>
