@@ -4,14 +4,28 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import register from './assets/img/illustrations/register.svg'
 import './Style.css'
+import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import { useTheme } from '../DarkThemeprovider';
 
 const SignIn = () => {
-    return (
-      <div>
-        <Navbar></Navbar>
+  // const [theme, setTheme] = useState('light');
+
+  // const toggleTheme = () => {
+  //   if (theme === 'light') {
+  //     setTheme('dark');
+  //   } else {
+  //     setTheme('light');
+  //   }
+  // };
+
+  const { theme, toggleTheme } = useTheme();
   
+  return (
+      <div className={`app ${theme}`}>
+        <Navbar theme={theme} toggleTheme={toggleTheme}></Navbar>
+        
         <section className="py-4 py-md-5 my-5">
           <div className="container py-md-5">
             <div className="row">
@@ -23,12 +37,11 @@ const SignIn = () => {
                   <div className="mb-3"><input className="shadow-sm form-control" type="password" name="password" id="Password" placeholder="Password" /></div>
                   <div className="mb-5"><button className="btn btn-primary shadow" type="submit">Log in</button></div>
                 </form>
-                <p className="text-muted"><a href="login.html">Forgot your password?<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icon-tabler-arrow-narrow-right">
-                  {/* SVG path */}
+                <p ><a href="login.html">Forgot your password?<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icon-tabler-arrow-narrow-right">
                 </svg></a>&nbsp;</p>
+             
+                <p >New to Brainnex? <a href="SignUp">Sign up<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icon-tabler-arrow-narrow-right">
 
-                <p className="text-muted">New to Brainnex? <a href="SignUp">Sign up<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icon-tabler-arrow-narrow-right">
-                  {/* SVG path */}
                 </svg></a>&nbsp;</p>
               </div>
             </div>

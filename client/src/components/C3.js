@@ -1,15 +1,27 @@
 import React from 'react';
 import './Style.css'; // Import the CSS file
 import Navbar from './Navbar';
-import Footer from './Footer';
+import { useState } from 'react';
+import { useTheme } from '../DarkThemeprovider';
 
 const C3 = () => {
+  //  const [theme, setTheme] = useState('light'); // 'light' or 'dark' theme
+
+  // const toggleTheme = () => {
+  //   if (theme === 'light') {
+  //     setTheme('dark');
+  //   } else {
+  //     setTheme('light');
+  //   }
+  // };
+  const { theme, toggleTheme } = useTheme();
+
   return (
-    <div>
-      <Navbar></Navbar>
-      <div style={{height:'1200px'}}>
-      <div className='c1'>
-        <h1 className='c1h'>Creative Arts </h1><br />
+    <div className={`app ${theme}`}>
+      <Navbar theme={theme} toggleTheme={toggleTheme}></Navbar>
+      <div style={{height:'100px'}}>
+      <div className={`c1 ${theme}`}>
+        <h1 className={`c1h ${theme}`}>Creative Arts </h1><br />
         <div className="course">
           <img
             src="https://indiaeducation.net/wp-content/uploads/2023/04/Professional.jpg"
@@ -62,8 +74,6 @@ const C3 = () => {
        
       </div>
       </div>
-
-      <Footer></Footer>
     </div>
   );
 };

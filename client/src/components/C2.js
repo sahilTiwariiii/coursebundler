@@ -1,16 +1,18 @@
 import React from 'react';
 import './Style.css'; // Import the CSS file
 import Navbar from './Navbar';
-import Footer from './Footer';
+import { useTheme } from '../DarkThemeprovider';
 
 const C2 = () => {
+  
+  const { theme, toggleTheme } = useTheme();
   return (
-    <div>
-      <Navbar></Navbar>
+    <div className={`app ${theme}`}>
+      <Navbar theme={theme} toggleTheme={toggleTheme}></Navbar>
       <div style={{height:'1200px'}}>
-      <div className='c1'>
-        <h1 className='c1h'>Professional Courses</h1><br />
-        <div className="course">
+      <div className={`c1 ${theme}`}>
+        <h1 className={`c1h ${theme}`}>Professional Courses</h1><br />
+        <a className={`course col-sm-6 col-md-4 col-lg-3`} href='/'>
           <img
             src="https://indiaeducation.net/wp-content/uploads/2023/04/Professional.jpg"
             className='ci'
@@ -25,8 +27,8 @@ const C2 = () => {
             <span className='stars'>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
           </div>
           <button >Add to Cart</button>
-        </div>
-        <div className="course">
+        </a>
+        <a className={`course col-sm-6 col-md-4 col-lg-3`} href='/'>
           <img
             src="https://indiaeducation.net/wp-content/uploads/2023/04/Professional.jpg"
             className='ci'
@@ -41,8 +43,8 @@ const C2 = () => {
             <span className='stars'>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
           </div>
           <button>Add to Cart</button>
-        </div>
-        <div className="course">
+        </a>
+        <a className={`course col-sm-6 col-md-4 col-lg-3`} href='/'>
           <img
             src="https://indiaeducation.net/wp-content/uploads/2023/04/Professional.jpg"
             className='ci'
@@ -57,10 +59,10 @@ const C2 = () => {
             <span className='stars'>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
           </div>
           <button>Add to Cart</button>
-        </div>
+        </a>
       </div>
-      <div className='c1'>
-        <div className="course">
+      <div className={`c1 ${theme}`}>
+        <a className={`course col-sm-6 col-md-4 col-lg-3`} href='/'>
           <img
             src="https://indiaeducation.net/wp-content/uploads/2023/04/Professional.jpg"
             className='ci'
@@ -75,9 +77,9 @@ const C2 = () => {
             <span className='stars'>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
           </div>
           <button>Add to Cart</button>
-        </div>
+        </a>
 
-        <div className="course">
+        <a className={`course col-sm-6 col-md-4 col-lg-3`} href='/'>
           <img
             src="https://indiaeducation.net/wp-content/uploads/2023/04/Professional.jpg"
             className='ci'
@@ -92,8 +94,8 @@ const C2 = () => {
             <span className='stars'>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
           </div>
           <button>Add to Cart</button>
-        </div>
-        <div className="course">
+        </a>
+        <a className={`course col-sm-6 col-md-4 col-lg-3`} href='/'>
           <img
             src="https://indiaeducation.net/wp-content/uploads/2023/04/Professional.jpg"
             className='ci'
@@ -108,12 +110,10 @@ const C2 = () => {
             <span className='stars'>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
           </div>
           <button>Add to Cart</button>
-        </div>
+        </a>
        
       </div>
       </div>
-
-      <Footer></Footer>
     </div>
   );
 };

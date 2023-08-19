@@ -9,7 +9,7 @@ import './Style.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
-function Navbar() {
+function Navbar({ theme, toggleTheme }) {
   return (
     <div>
       <nav className="navbar navbar-expand-md fixed-top navbar-shrink py-3 navbar-light" id="mainNav">
@@ -23,7 +23,7 @@ function Navbar() {
           </button>
           <div className="collapse navbar-collapse" id="navcol-1">
             <ul className="navbar-nav mx-auto">
-              <li className="nav-item"><Link to="/" className="nav-link">Home</Link></li>
+            <li className="nav-item"><Link to="/" className="nav-link">Home</Link></li>
               <li className="nav-item dropdown">
                 <Link
                   to="#"
@@ -48,8 +48,19 @@ function Navbar() {
                 <li className="nav-item"><Link to="/" className="nav-link"><i className="fas fa-shopping-cart"></i> Cart</Link></li>
                 <li className="nav-item"><Link to="/Profile" className="nav-link"><i className="fas fa-user"></i> Profile</Link></li>
               </ul>
+            
             </ul>
-            <Link className="btn btn-primary shadow" role="button" to="/SignUp">Login/Sign up</Link>
+            <div className="d-flex align-items-center">
+              <button
+                style={{ background: '#1d193d', color: 'white', marginRight: '15px' }} // Adjust the margin value as needed
+                onClick={toggleTheme}
+              >
+                Theme
+              </button>
+              <Link className="btn btn-primary shadow" role="button" to="/SignUp" style={{ background: '#1d193d'}}>
+                Login/Sign up
+              </Link>
+            </div>
           </div>
         </div>
       </nav>

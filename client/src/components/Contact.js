@@ -8,8 +8,10 @@ const Contact = props => {
   
   return (
     <div className="contact">
-<Navbar></Navbar>
+       <Navbar></Navbar>
+
 <div className="cont2" style={{}}>
+  
     <form onSubmit={handleSubmit} data-testid="simple-form">
       <div className="redux" >
         <h1 style={{fontSize:'30px',position:'relative',top:'20px',marginLeft:'100px',color:'white'}}>Feel free to write to Us</h1>

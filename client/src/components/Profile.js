@@ -1,15 +1,26 @@
 import React from 'react';
 import './Style.css'
 import Navbar from './Navbar';
-import b from './images/b.png'
+import b from './images/b.png';
+import { useState,useEffect } from 'react';
+import { useTheme } from '../DarkThemeprovider';
+
 const Profile = () => {
+  // const storedTheme = localStorage.getItem('theme') || 'light';
+  // const [theme, setTheme] = useState(storedTheme);
+
+  // useEffect(() => {
+  //   localStorage.setItem('theme', theme);
+  // }, [theme]);
+  const { theme, toggleTheme } = useTheme();
 
   return (
+    <div className={`app ${theme}`}>
     <div className='body2'>
-      <Navbar></Navbar>
-      <div className="main" style={{paddingTop:'80px'}}>
+      <Navbar theme={theme} toggleTheme={toggleTheme} ></Navbar>
+      <div className='main' style={{paddingTop:'80px'}}>
         <div className="container rounded bg-white mt-5 mb-5" >
-          <div className="row"  >
+          <div className={`row ${theme}`}  >
             <div className="col-md-5 border-right">
               <div className="d-flex flex-column align-items-center text-center p-3 py-5">
                 <img className="rounded-circle mt-5" src={b} alt="Profile" />
@@ -17,6 +28,9 @@ const Profile = () => {
             </div>
             <div className="col-md-5 border-right">
               <div className="p-3 py-5">
+              {/* <button className='theme-toggle-button' onClick={toggleTheme}>
+          Toggle Theme
+        </button> */}
                 <div className="d-flex justify-content-between align-items-center mb-3">
                   <h4 className="text-right">Profile</h4>
                 </div>
@@ -42,6 +56,7 @@ const Profile = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

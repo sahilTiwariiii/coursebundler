@@ -1,6 +1,12 @@
 .container {
   max-width: 1200px;
-  /* Change this value to increase/decrease the width */
+}
+
+.card-title {
+  max-width: 100%;
+}
+.card {
+  height: 100%; /* Set a fixed height for all cards */
 }
 
 .faq {
@@ -8,35 +14,37 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
-  margin-top: 100px;
   background-color: rgb(219, 218, 231);
   height: 600px;
-  /* Adjust the height as per your requirement */
-  width: 90%;
-  /* Set the width to a specific value or percentage */
-  max-width: 7000px;
-  /* Optional: Set a maximum width to control responsiveness */
   border-radius: 20px;
-  /* Set the border radius to create curved corners */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 140px auto;
+  margin-top: 200px;
+  max-width: 1450px; /* Adjust this value according to your design */
 }
 
 .pp {
-  display: flex;
   justify-content: center;
-  align-items: center;
   background-color: #1d193d;
-  height: 100vh;
-  /* Set the height of the pp div to fill the viewport */
+  /* max-height: 100%; */
+  height: 750px;
+  display: flex;
+  align-items: center;
 }
 
 .laq {
   font-weight: bold;
 }
 
-#carrier-page {
-  padding: 50px 0;
+.carrier-page {
+  background:#851a1a;
+  /* width: 2000px; */
+}
+
+.carr{
+  background-color: #1d193d;
+  height: 800px;
 }
 
 .img-fluid {
@@ -46,11 +54,12 @@
 }
   .laq{
     font-weight: bold;
-
   }
 
 
-.body2{background: #1d193d; height: 745px;}.form-control:focus{box-shadow: none;border-color: #1d193d}.profile-button{background:#1d193d;box-shadow: none;border: none}.profile-button:hover{background: #1d193d}.profile-button:focus{background: #1d193d;box-shadow: none}.profile-button:active{background: #1d193d;box-shadow: none}.back:hover{color: #1d193d;cursor: pointer}.labels{font-size: 11px}.add-experience:hover{background: #1d193d;color: #fff;cursor: pointer;border: solid 1px #1d193d}
+.body2{background: #1d193d; height: 745px;}.form-control:focus{box-shadow: none;border-color: #1d193d}.profile-button{background:#1d193d;box-shadow: none;border: none}.profile-button:hover{background: #1d193d}.profile-button:focus{background: #1d193d;box-shadow: none}.profile-button:active{background: #1d193d;box-shadow: none}.back:hover{color: #1d193d;cursor: pointer}.labels{font-size: 11px}.add-experience:hover{background: #1d193d;color: #fff;cursor: pointer;border: solid 1px #b7b4ca}
+
+
 .abcd{
     display: flex;
 }
@@ -101,25 +110,91 @@
 /*course page */
 
 .c1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--text-color); 
+  justify-content: center;
+  background-color: #ffffff;
+  /* height: 800px; */
+  margin-bottom: 40px;
+  margin-top: 0px;
+}
+.c2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  color: var(--text-color); 
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   background-color: #ffffff;
-  height: 800px;
-  margin-bottom: 80px;
+  margin-bottom: -80px;
 }
 
 .course {
-  border: 1px solid #000000;
+  border: 1px solid var(--border-color);
   padding: 10px;
-  margin: 10px 2.5%; /* Adjust margin for even spacing between columns */
-  width: 25%; /* Set the width of each course container */
-  height: 55%;
-  margin-top: -200px;
-  background-color: #e0e0e6;
-  
+  margin: 2.5%; /* Adjust margin for even spacing between columns */
+  width: calc(25% - 20px); ; 
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
   /* text-align: center; */
 }
+
+.course img {
+  max-width: 80%;
+  height: auto;
+  padding: 0px; /* Optional padding to create space between the image and the border */
+  margin-left: 30px;
+  border: 4px solid ;
+}
+
+.course h5 {
+  margin-top: 10px;
+  max-height: 3em; /* Adjust the number of lines as needed */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.course p {
+  margin-bottom: 10px;
+  max-height: 3em; /* Adjust the number of lines as needed */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ratings {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  margin-right: 20px;
+  float: left; /* Float the ratings to the left */
+  margin-right: 50px;
+}
+
+.course button {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: 2px solid var(--border-color);
+  padding: 7px 7px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+ 
+}
+
+.course button:hover {
+  background-color: var(--background-color);
+  color: var(--button-bg-color);
+}
+
 .cp{
   color: rgb(216, 24, 24);
   padding: -10px;
@@ -127,20 +202,15 @@
   margin-top: -10px;
 }
 
-.ci{
-  width: 240px;
-  height: 150px;
-  border: 4px solid #000; /* Adjust the border width and color as needed */
-  padding: 0px; /* Optional padding to create space between the image and the border */
-  margin-left: 50px;
- 
-}
+
 .course.button{
   background-color: #000000;
   color: #000000;
   position: relative; /* Set the button position to relative */
   left: 250px; /* Adjust the left offset as needed */
   bottom: 0; 
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
 }
 
 .ch5{
@@ -152,28 +222,20 @@
   font-style: italic;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: center;
-  margin-left: 200px;
-  margin-top: 110px;
-  margin-right: 200px;
-  width: 2000px;
+  width: 5000px;
   color: rgb(94, 82, 78);
     font-size: 2.5rem;
     color: #333; /* Change the color to your preference */
     text-align: center;
-    margin-bottom: 100px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    padding-top: 50px;
+    margin-top: 50px; /* Decreased margin-top here */
+  margin-bottom: 40px; /* Adjust margin-bottom as needed */
 
 }
 
-.ratings {
-  display: flex;
-  align-items: center;
-  margin: 10px 0;
-  margin-right: 20px;
-  float: left; /* Float the ratings to the left */
-  margin-right: 50px;
-}
+
 
 .rating {
   font-size: 1.5rem;
@@ -186,3 +248,85 @@
   color: #ff9800; /* Change the color to match your design */
 }
 
+.light {
+  --border-color: #000000; /* Change to your light border color */
+  --background-color: #e0e0e6; /* Change to your light background color */
+  --button-bg-color: #000000; /* Change to your light button background color */
+  --button-text-color: #ffffff; /* Change to your light button text color */
+  --image-border-color: #000; /* Change to your light image border color */
+  background-color: #fbf9f9;
+  color: #000000;
+  --text-color: #000000; 
+}
+
+.dark {
+  --border-color: #ffffff; /* Change to your dark border color */
+  --background-color: #bcb9b9; /* Change to your dark background color */
+  --button-bg-color: #ffffff; /* Change to your dark button background color */
+  --button-text-color: #000000; /* Change to your dark button text color */
+  --image-border-color: #fff; /* Change to your dark image border color */
+  background-color: #000000;
+  color: #fbf9f9;
+  --text-color: #ffffff; 
+  
+}
+
+.dark p a {
+  color: white; /* Change the link color to white */
+}
+
+.dark row a {
+  color: white; /* Change the link color to white */
+}
+
+.light button {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: 2px solid var(--border-color);
+  padding: 7px 7px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;  
+}
+
+.light button:hover {
+  background-color: var(--background-color);
+  color: var(--button-bg-color);
+}
+
+.dark button {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: 2px solid var(--border-color);
+  padding: 7px 7px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark button:hover {
+  background-color: var(--background-color);
+  color: var(--button-bg-color);
+}
+
+.c1.light {
+  color: var(--text-color); /* Set the text color for c1 in the light theme */
+}
+
+.c1.dark {
+  color: var(--text-color); /* Set the text color for c1 in the dark theme */
+}
+
+.c2.light {
+  color: var(--text-color); /* Set the text color for c2 in the light theme */
+}
+
+.c2.dark {
+  color: var(--text-color); /* Set the text color for c2 in the dark theme */
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust the gap value as needed */
+}

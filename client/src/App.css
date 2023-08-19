@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+.app.dark {
+  --background-color: #000000;
+  --text-color: #ffffff;
+  --card-background: #1a1a1a;
+  /* ... other variables */
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Style for card components */
+.card {
+  background-color: var(--card-background);
+  color: var(--text-color);
+  /* ... other styles */
+}
