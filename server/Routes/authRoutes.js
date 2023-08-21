@@ -3,6 +3,7 @@ const authController=require("../controller/authController")
 const Router=express.Router();
 Router.post("/bn/auth/signup",authController.postSignup);
 Router.post("/bn/auth/login",authController.postLogin);
+<<<<<<< HEAD
 module.exports=Router
 // const express = require('express');
 const router = express.Router();
@@ -17,3 +18,11 @@ router.get('/api/videos', (req, res) => {
   // ... Other route definitions ...
   
   module.exports = router;
+=======
+Router.post('/bn/auth/reset',authController.postReset)
+Router.post('/bn/auth/resetpassword',authController.newPassword)
+Router.get('/bn/auth/verifytoken/:token',authController.checkToken)
+
+
+module.exports=Router
+>>>>>>> 046c8b149f560bb891afe5992c2762f3b9a4d385

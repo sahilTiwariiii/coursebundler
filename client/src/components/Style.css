@@ -149,6 +149,9 @@
   padding-bottom: 20px; /* Add some space between the name and the bottom edge */
   position: relative;
 }
+.zehra{
+  margin-left: 14vw;
+}
 
 .course {
   border: 1px solid var(--border-color);

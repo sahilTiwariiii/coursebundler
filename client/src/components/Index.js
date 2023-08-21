@@ -7,12 +7,26 @@ import Carrier from "./Carrier";
 import { useTheme } from '../DarkThemeprovider';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+<<<<<<< HEAD
 // import  { useState } from 'react';
+=======
+import Tutor from './Tutor';
+>>>>>>> 046c8b149f560bb891afe5992c2762f3b9a4d385
 
 function Index() {
   const { theme, toggleTheme } = useTheme();
 
     return(
+<<<<<<< HEAD
+=======
+    <div >
+      <Navbar></Navbar>
+      <Course></Course>
+      <Carrier></Carrier>
+      <Tutor></Tutor>
+
+      <Footer></Footer>
+>>>>>>> 046c8b149f560bb891afe5992c2762f3b9a4d385
 
       <div >
         <div className={`app ${theme}`}>

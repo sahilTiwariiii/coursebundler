@@ -12,7 +12,11 @@ const userSchema=mongoose.Schema(
         password:{
             type:String,
             required:true
-        }
+        },
+        twitterUrl:String,
+        linkedUrl:String,
+        resetToken: String,
+        resetTokenExpiration: Date
     }
 )
 

@@ -3,11 +3,15 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Navbar from './Navbar';
 import './Style.css'
 
+<<<<<<< HEAD
 import PropTypes from 'prop-types';
 
 <Navbar></Navbar>
 const Carrier = ( { theme, toggleTheme }) => {
     // const [theme, setTheme] = useState('light');
+=======
+const Carrier = () => {
+>>>>>>> 046c8b149f560bb891afe5992c2762f3b9a4d385
     return (
         
         <section className={`carr ${theme}`}>
