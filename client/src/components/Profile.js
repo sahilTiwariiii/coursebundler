@@ -2,7 +2,7 @@ import React from 'react';
 import './Style.css'
 import Navbar from './Navbar';
 import b from './images/b.png';
-import { useState,useEffect } from 'react';
+// import { useState,useEffect } from 'react';
 import { useTheme } from '../DarkThemeprovider';
 
 const Profile = () => {

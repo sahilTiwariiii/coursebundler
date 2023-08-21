@@ -11,6 +11,9 @@ import C2 from "./components/C2";
 import C3 from "./components/C3";
 import Profile from "./components/Profile";
 import Contact from './components/Contact';
+import Mentor from "./components/Mentor";
+import Resume from "./components/Resume";
+import Coursedata from "./components/Coursedata";
 
 function Apps() {
   return (
@@ -29,7 +32,9 @@ function Apps() {
   <Route path='/C1' element={<C1/>} exact/>
   <Route path='/C2' element={<C2/>} exact/>
   <Route path='/C3' element={<C3/>} exact/>
-
+  <Route path='/Mentor' element={<Mentor/>} exact/>
+  <Route path='/Resume' element={<Resume/>} exact/>
+  <Route path='/Resume' element={<Coursedata/>} exact/>
 
 </Routes>
 </Router>

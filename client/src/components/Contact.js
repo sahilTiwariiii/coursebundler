@@ -2,13 +2,15 @@ import React from "react";
 import { Field, reduxForm } from "redux-form";
 import Navbar from './Navbar'
 import './Style.css'
+import { useTheme } from '../DarkThemeprovider';
+
 
 const Contact = props => {
   const { handleSubmit} = props;
-  
+  const { theme, toggleTheme } = useTheme();
   return (
-    <div className="contact">
-       <Navbar></Navbar>
+    <div className={`contact ${theme}`}>
+       <Navbar theme={theme} toggleTheme={toggleTheme}></Navbar>
 
 <div className="cont2" style={{}}>
   

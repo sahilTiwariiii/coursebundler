@@ -1,19 +1,10 @@
 import React from 'react';
 import './Style.css'; // Import the CSS file
 import Navbar from './Navbar';
-import { useState } from 'react';
 import { useTheme } from '../DarkThemeprovider';
 
 const C3 = () => {
-  //  const [theme, setTheme] = useState('light'); // 'light' or 'dark' theme
-
-  // const toggleTheme = () => {
-  //   if (theme === 'light') {
-  //     setTheme('dark');
-  //   } else {
-  //     setTheme('light');
-  //   }
-  // };
+  
   const { theme, toggleTheme } = useTheme();
 
   return (

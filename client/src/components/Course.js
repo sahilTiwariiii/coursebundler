@@ -8,6 +8,7 @@ import './Style.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 function Course({ theme, toggleTheme }) {
  
@@ -27,8 +28,9 @@ function Course({ theme, toggleTheme }) {
                   Discover the art of learning by doing with our interactive courses.
                   Gain practical skills and knowledge through hands-on experiences for a transformative educational journey.
                 </p>
-                <a className="btn btn-primary btn-lg me-2" role="button" href="/">Student</a>
-                <a className="btn btn-light btn-lg" role="button" href="/">Mentor</a>
+                <Link className="btn btn-primary btn-lg me-2" role="button" href="/">Student</Link>
+                {/* <a className="btn btn-light btn-lg" role="button" href="/Mentor">Mentor</a> */}
+                <Link className="btn btn-light btn-lg" role="button" to="/Mentor">Mentor</Link>
               </div>
             </div>
             <div className="col-md-6">
@@ -67,8 +69,7 @@ function Course({ theme, toggleTheme }) {
                 <div className="inner">
                   <img
                     src="https://indiaeducation.net/wp-content/uploads/2023/04/Professional.jpg"
-                    // width="300px"
-                    // height="80px"
+                  
                     alt="hospitals"
                     className="card-img-top img-fluid"
                     style={{ maxHeight: '220px', objectFit: 'cover' }}
