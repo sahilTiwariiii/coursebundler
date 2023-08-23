@@ -1,9 +1,9 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import './assets/css/Raleway.css'
-import './assets/bootstrap/css/bootstrap.min.css'
-import './Style.css'
+import './assets/css/Raleway.css';
+import './assets/bootstrap/css/bootstrap.min.css';
+import './Style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
@@ -11,14 +11,14 @@ function Footer() {
   return (
     <footer className="container2">
       <div className="container py-4 py-lg-5">
-        <div className="row row-cols-2 row-cols-md-4">
-          <div className="col-12 col-md-3">
+      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+      <div className="col-md-3 col-lg-3">
             <div className="fw-bold d-flex align-items-center mb-2">
               <span>BrainNex</span>
             </div>
             <p className="text-muted">A place where learning never ends...</p>
           </div>
-          <div className="col-sm-4 col-md-3 text-lg-start d-flex flex-column">
+          <div className="col-sm-6 col-md-3 col-lg-3 text-lg-start">
             <h3 className="fs-6 fw-bold">Services</h3>
             <ul className="list-unstyled">
               <li><a href="/">Courses</a></li>
@@ -26,14 +26,14 @@ function Footer() {
               <li><a href="/">Teaching</a></li>
             </ul>
           </div>
-          <div className="col-sm-4 col-md-3 text-lg-start d-flex flex-column">
+          <div className="col-sm-6 col-md-3 col-lg-3 text-lg-start">
             <h3 className="fs-6 fw-bold">About</h3>
             <ul className="list-unstyled">
               <li><a href="/">Company</a></li>
               <li><a href="/">Team</a></li>
             </ul>
           </div>
-          <div className="col-sm-4 col-md-3 text-lg-start d-flex flex-column">
+          <div className="col-md-3 col-lg-3 text-lg-start">
             <h3 className="fs-6 fw-bold">Contacts</h3>
             <ul className="list-unstyled">
               <li><a href="/">Call Center</a></li>

@@ -2,14 +2,18 @@ import React from "react";
 import { Field, reduxForm } from "redux-form";
 import Navbar from './Navbar'
 import './Style.css'
+import { useTheme } from '../DarkThemeprovider';
+
 
 const Contact = props => {
   const { handleSubmit} = props;
-  
+  const { theme, toggleTheme } = useTheme();
   return (
-    <div className="contact">
-<Navbar></Navbar>
+    <div className={`contact ${theme}`}>
+       <Navbar theme={theme} toggleTheme={toggleTheme}></Navbar>
+
 <div className="cont2" style={{}}>
+  
     <form onSubmit={handleSubmit} data-testid="simple-form">
       <div className="redux" >
         <h1 style={{fontSize:'30px',position:'relative',top:'20px',marginLeft:'100px',color:'white'}}>Feel free to write to Us</h1>

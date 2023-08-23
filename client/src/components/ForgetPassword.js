@@ -7,11 +7,9 @@ import './Style.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import axios from "axios";
-import {useNavigate} from "react-router-dom"
 
 const Forgetpass = () => {
     const [email, setEmail] = useState("");
-    const Navigate=useNavigate()
     const emailChange=(e)=>{
         setEmail(e.target.value);
     }
